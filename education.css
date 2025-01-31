@@ -195,6 +195,11 @@ footer a {
         
     }
 
+    p.date {
+        font-size: calc(2px + 2vw);
+        padding: 1vh;
+    }
+
     #container {
         width: 100%;
         flex-direction: column;
