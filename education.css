@@ -87,7 +87,7 @@ img {
     width: 45%;
     padding: 0.5vw;
     margin: 1vh 1vw;
-    border-radius: calc(1px + 1vw);
+    border-radius: calc(15px + 10vw);
 }
 
 /*css style for keeping image and text side by side*/
@@ -100,8 +100,8 @@ img {
 }
 
 /*css style for text in main*/
-#mainText {
-    font-size: calc(3px + 1vw);
+#schools {
+    font-size: calc(4px + 1vw);
     color: #112D4E;
     align-self: center;
     width: 50%;
@@ -109,13 +109,11 @@ img {
     
 }
 
-/*css style for home page sub text under main*/
-#subMainText {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: calc(3px + 1vw);
-    color: #112D4E;
-    padding: 1vw;
+p.date {
+    font-size: calc(2px + 1vw);
+    padding: 1vh;
 }
+
 
 footer {
     font-family: Arial, sans-serif;
@@ -189,7 +187,7 @@ footer a {
     }
 
     /*increase text font on smaller screen*/
-    #mainText {
+    #schools {
         font-size: calc(3px + 2vw);
         color: #112D4E;
         align-self: center;
