@@ -114,7 +114,6 @@ p.date {
     padding: 1vh;
 }
 
-
 footer {
     font-family: Arial, sans-serif;
     background-color: #112D4E;
@@ -194,13 +193,6 @@ footer a {
         width: 50%;
         margin: 1vh 1vw;
         
-    }
-    
-    #subMainText {
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: calc(3px + 2vw);
-        color: #112D4E;
-        padding: 1vw;
     }
 
     #container {
