@@ -1,0 +1,210 @@
+/*Color palette soruce: https://colorhunt.co/palette/f9f7f7dbe2ef3f72af112d4e
+
+/*prevent padding disortion*/
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*white spaces on left and right, main page take up 80%*/
+#pageWrapper {
+    width: 80vw;
+    margin: 0 auto;
+}
+
+/*css style for header, content on screen > 750px should be aligned left*/
+header {
+    font-family: 'Brush Script MT', 'Brush Script std', cursive;
+    font-size: calc(5px + 2vw);
+    color: #F9F7F7;
+    background-color: #3F72AF;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw;
+}
+
+/*custom css style for subtitle under header*/
+#subtitle {
+    font-family: Gill Sans, sans-serif;
+    font-size: calc(5px + 1vw);
+    padding: 1vh 1vw
+}
+
+/*screen > 750px should not exceed 30% of width of parent*/
+nav {
+    width: 30%
+}
+
+/*css style for the unordered list of internal links inside nav*/
+nav ul {
+    list-style: none; /*remove bullet points*/
+    display: flex;
+    flex-direction: column; /*make sure vertical on screen > 1000px*/
+    justify-content: space-evenly;
+    background-color: #DBE2EF;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*css style for the list of links*/
+nav li {
+    font-family: Gill Sans, sans-serif;
+    font-size: calc(1px + 2vw);
+    padding: 2vh 1vw;
+    margin: 3vh;
+    border: solid,#3F72AF;
+    border-radius: calc(1px + 1vw);
+    background-color: #3F72AF;
+
+}
+
+/*css style for links inside nav*/
+nav ul li a {
+    color: #F9F7F7;
+    text-decoration: none; /*removes underline of link*/
+}
+
+/*screen > 1000px should not have main exceed 70% of width of parent
+css style of overall main tag*/
+main {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    background-color: #F9F7F7;
+}
+
+/*css style for secondary header(internal link title)*/
+h2 {
+    font-family: Gill Sans, sans-serif;
+    color: #112D4E;
+    text-align: center;
+    padding: 1vh;
+}
+
+/*reduce image size*/
+img {
+    width: 45%;
+    padding: 0.5vw;
+    margin: 1vh 1vw;
+    border-radius: calc(1px + 1vw);
+}
+
+/*css style for keeping image and text side by side*/
+#imageText {
+    display: flex;
+    flex-direction: row;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+    padding: 1vh 2vw;
+}
+
+/*css style for text in main*/
+#mainText {
+    font-size: calc(3px + 1vw);
+    color: #112D4E;
+    align-self: center;
+    width: 50%;
+    margin: 1vh 1vw;
+    
+}
+
+/*css style for home page sub text under main*/
+#subMainText {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: calc(3px + 1vw);
+    color: #112D4E;
+    padding: 1vw;
+}
+
+footer {
+    font-family: Arial, sans-serif;
+    background-color: #112D4E;
+    color: #F9F7F7;
+    font-size: calc(1px + 1vw);
+    padding: 1vh 1vw;
+}
+
+footer a {
+    text-decoration: none; /*removes underline of link*/
+    color: #F9F7F7;
+}
+
+#container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+/*mobile device screen 750 -1000px*/
+@media screen and (max-width: 900px) {
+
+    /*screen < 750px should have content aligned center*/
+    header {
+        text-align: center;
+    }
+
+    /*occupy 100% of the width of its parent*/
+    nav {
+        width: 100%
+    }
+
+    /*nav change to horizontal on mobile/smaller screen*/
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0;
+    }
+
+    /*reduce size for internal links on smaller devices*/
+    nav li {
+        font-size: calc(1px + 2vw);
+        padding: 0.5vh 0.5vw;
+        margin: 0.5vh;
+        border-radius: calc(1px + 1vw);
+    }
+
+    /*screen < 1000px should occupy 100% of the width of its parent*/
+    main {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*center image in smaller screen*/
+    img {
+        max-width: 100%;
+        margin: auto;
+    }
+
+    #imageText {
+        display: flex;
+        flex-direction: column; /*change display to vertical in smaller screen*/
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        width: 100%;
+        padding: 2vh 2vw;
+    }
+
+    /*increase text font on smaller screen*/
+    #mainText {
+        font-size: calc(3px + 2vw);
+        color: #112D4E;
+        align-self: center;
+        width: 50%;
+        margin: 1vh 1vw;
+        
+    }
+    
+    #subMainText {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: calc(3px + 2vw);
+        color: #112D4E;
+        padding: 1vw;
+    }
+
+    #container {
+        width: 100%;
+        flex-direction: column;
+    }
+}
