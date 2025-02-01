@@ -82,41 +82,39 @@ h2 {
     padding: 1vh;
 }
 
-/*reduce image size*/
-img {
-    width: 45%;
-    padding: 0.5vw;
-    margin: 1vh 1vw;
-    border-radius: calc(1px + 1vw);
-}
-
-/*css style for keeping image and text side by side*/
-#imageText {
-    display: flex;
-    flex-direction: row;
+/*css styling for the main list of text */
+#mainText {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    width: 100%;
-    padding: 10vh 2vw;
+    font-size: calc(6px + 1vw);
+    color: #112D4E;
+    align-self: center;
+    width: 80%;
+    margin: 1vh 1vw;
+    padding: 0.5vh 2vw;
+    
 }
 
-/*css style for text in main*/
+/*css style for award names*/
 p.award {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: calc(6px + 1vw);
     color: #112D4E;
     align-self: center;
-    width: 50%;
+    width: 100%;
     margin: 1vh 1vw;
+    padding: 1vh;
     
 }
 
+/*css style for school names*/
 p.schoolName {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: calc(4px + 1vw);
-    color: #112D4E;
+    color: #3F72AF;;
     align-self: center;
-    width: 50%;
+    width: 100%;
     margin: 1vh 1vw;
+ 
 }
 
 footer {
@@ -176,28 +174,37 @@ footer a {
         flex-direction: column;
     }
 
-    /*center image in smaller screen*/
-    img {
-        max-width: 100%;
-        margin: auto;
-    }
-
-    #imageText {
-        display: flex;
-        flex-direction: column; /*change display to vertical in smaller screen*/
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        width: 100%;
-        padding: 2vh 2vw;
-    }
-
     /*increase text font on smaller screen*/
     #mainText {
         font-size: calc(3px + 2vw);
         color: #112D4E;
         align-self: center;
-        width: 50%;
+        width: 60%;
         margin: 1vh 1vw;
         
+    }
+
+    /*increase font size in smaller screen*/
+    p.award {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: calc(6px + 2vw);
+        color: #112D4E;
+        align-self: center;
+        width: 100%;
+        margin: 1vh 1vw;
+        padding: 1vh;
+        
+    }
+
+    /*increase font size in smaller screen*/
+    p.schoolName {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: calc(4px + 2vw);
+        color: #3F72AF;;
+        align-self: center;
+        width: 100%;
+        margin: 1vh 1vw;
+    
     }
 
     #container {
