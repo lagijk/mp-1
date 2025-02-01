@@ -84,29 +84,33 @@ h2 {
 
 /*reduce image size*/
 img {
+    height: 100%;
     width: 45%;
-    padding: 0.5vw;
-    margin: 1vh 1vw;
-    border-radius: calc(1px + 1vw);
-}
-
-/*css style for keeping image and text side by side*/
-#imageText {
-    display: flex;
-    flex-direction: row;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    width: 100%;
-    padding: 10vh 2vw;
+    padding: 1vh 2vw;
+   
 }
 
 /*css style for text in main*/
 #mainText {
+    display: flex;
+    flex-direction: row;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 2vh 2vw;
+}
+
+h3 {
+    color: #112D4E;
+    font-family: Gill Sans, sans-serif;
+    padding: 1vw 1vh;
+    width: 60%;
+}
+
+td {
     font-size: calc(4px + 1vw);
     color: #112D4E;
-    align-self: center;
-    width: 50%;
-    margin: 1vh 1vw;
-    
+    border: solid, 1px, #3F72AF;
+    padding: 1vw 1vh;
+
 }
 
 footer {
@@ -172,7 +176,7 @@ footer a {
         margin: auto;
     }
 
-    #imageText {
+    #mainText {
         display: flex;
         flex-direction: column; /*change display to vertical in smaller screen*/
         font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -180,9 +184,16 @@ footer a {
         padding: 2vh 2vw;
     }
 
+    h3 {
+        color: #112D4E;
+        font-family: Gill Sans, sans-serif;
+        padding: 1vw 1vh;
+        width: 50%;
+    }
+
     /*increase text font on smaller screen*/
-    #mainText {
-        font-size: calc(3px + 2vw);
+    td {
+        font-size: calc(4px + 2vw);
         color: #112D4E;
         align-self: center;
         width: 50%;
