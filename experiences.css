@@ -25,7 +25,7 @@ header {
 
 /*custom css style for subtitle under header*/
 #subtitle {
-    font-family: Gill Sans, sans-serif;
+    font-family: "Gill Sans", sans-serif;
     font-size: calc(5px + 1vw);
     padding: 1vh 1vw
 }
@@ -49,11 +49,11 @@ nav ul {
 
 /*css style for the list of links*/
 nav li {
-    font-family: Gill Sans, sans-serif;
+    font-family: "Gill Sans", sans-serif;
     font-size: calc(1px + 2vw);
     padding: 2vh 1vw;
     margin: 3vh;
-    border: solid,#3F72AF;
+    border: solid #3F72AF;
     border-radius: calc(1px + 1vw);
     background-color: #3F72AF;
 
@@ -76,33 +76,18 @@ main {
 
 /*css style for secondary header(internal link title)*/
 h2 {
-    font-family: Gill Sans, sans-serif;
+    font-family: "Gill Sans", sans-serif;
     color: #112D4E;
     text-align: center;
     padding: 1vh;
 }
 
-/*reduce image size*/
-img {
-    align-items: right;
-    width: 45%;
-    padding: 0.5vw;
-    margin: 1vh 1vw;
-    border-radius: calc(15px + 10vw);
-}
-
-/*css style for keeping image and text side by side*/
-#imageText {
-    display: flex;
-    flex-direction: row;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    width: 100%;
-    padding: 1vh 2vw;
-}
+/*css styling for header 3, internship name in this case*/
 h3 {
     font-size: calc(3px + 1vw);
     padding: 0.5vh;
 }
+
 /*css style for text in main*/
 #mainText {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -115,11 +100,11 @@ h3 {
     
 }
 
+/*css styling for all dates of internship*/
 p.date {
     font-size: calc(2px + 1vw);
     padding: 1vh;
 }
-
 
 footer {
     font-family: Arial, sans-serif;
@@ -184,19 +169,13 @@ footer a {
         margin: auto;
     }
 
+    /*increase font size in smaller screen*/
     h3 {
         font-size: calc(3px + 2vw);
         padding: 0.5vh;
     }
 
-    #imageText {
-        display: flex;
-        flex-direction: column; /*change display to vertical in smaller screen*/
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        width: 100%;
-        padding: 2vh 2vw;
-    }
-
+   
     /*increase text font on smaller screen*/
     #mainText {
         font-size: calc(3px + 2vw);
@@ -206,6 +185,7 @@ footer a {
         margin: 1vh 1vw;
     }
 
+    /*increase font size in smaller screen*/
     p.date {
         font-size: calc(2px + 2vw);
         padding: 1vh;
