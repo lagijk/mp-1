@@ -25,7 +25,7 @@ header {
 
 /*custom css style for subtitle under header*/
 #subtitle {
-    font-family: Gill Sans, sans-serif;
+    font-family: "Gill Sans", sans-serif;
     font-size: calc(5px + 1vw);
     padding: 1vh 1vw
 }
@@ -49,11 +49,11 @@ nav ul {
 
 /*css style for the list of links*/
 nav li {
-    font-family: Gill Sans, sans-serif;
+    font-family: "Gill Sans", sans-serif;
     font-size: calc(1px + 2vw);
     padding: 2vh 1vw;
     margin: 3vh;
-    border: solid,#3F72AF;
+    border: solid #3F72AF;
     border-radius: calc(1px + 1vw);
     background-color: #3F72AF;
 
@@ -76,7 +76,7 @@ main {
 
 /*css style for secondary header(internal link title)*/
 h2 {
-    font-family: Gill Sans, sans-serif;
+    font-family: "Gill Sans", sans-serif;
     color: #112D4E;
     text-align: center;
     padding: 1vh;
@@ -100,7 +100,7 @@ img {
 
 h3 {
     color: #112D4E;
-    font-family: Gill Sans, sans-serif;
+    font-family: "Gill Sans", sans-serif;
     padding: 1vw 1vh;
     width: 60%;
 }
@@ -108,7 +108,7 @@ h3 {
 td {
     font-size: calc(4px + 1vw);
     color: #112D4E;
-    border: solid, 1px, #3F72AF;
+    border: solid 1px #3F72AF;
     padding: 1vw 1vh;
 
 }
@@ -186,7 +186,7 @@ footer a {
 
     h3 {
         color: #112D4E;
-        font-family: Gill Sans, sans-serif;
+        font-family: "Gill Sans", sans-serif;
         padding: 1vw 1vh;
         width: 50%;
     }
