@@ -16,6 +16,9 @@ function addition() {
     // if result is negative change text color to red
     if (result < 0) {
         output.style.color = "red";
+    // if either input is not a number display error
+    } else if (isNaN(num1) || isNaN(num2)) {
+        output.innerHTML = "Please enter a number";
     } else {
         output.style.color = "";
     }
@@ -33,6 +36,9 @@ function subtraction() {
     // if result is negative change text color to red
     if (result < 0) {
         output.style.color = "red";
+    // if either input is not a number display error
+    } else if (isNaN(num1) || isNaN(num2)) {
+        output.innerHTML = "Please enter a number";
     } else {
         output.style.color = "";
     }
@@ -50,6 +56,9 @@ function multiply() {
     // if result is negative change text color to red
     if (result < 0) {
         output.style.color = "red";
+    // if either input is not a number display error
+    } else if (isNaN(num1) || isNaN(num2)) {
+        output.innerHTML = "Please enter a number";
     } else {
         output.style.color = "";
     }
@@ -74,6 +83,9 @@ function division() {
     // if result is negative change text color to red
     if (result < 0) {
         output.style.color = "red";
+    // if either input is not a number display error
+    } else if (isNaN(num1) || isNaN(num2)) {
+        output.innerHTML = "Please enter a number";
     } else {
         output.style.color = "";
     }
@@ -100,6 +112,9 @@ function exponent() {
     // if result is negative change text color to red
     if (result < 0) {
         output.style.color = "red";
+    // if either input is not a number display error
+    } else if (isNaN(num1) || isNaN(num2)) {
+        output.innerHTML = "Please enter a number";
     } else {
         output.style.color = "";
     }
