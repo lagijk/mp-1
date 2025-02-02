@@ -104,3 +104,10 @@ function exponent() {
         output.style.color = "";
     }
 }
+
+// clear operator
+function clearAll() {
+    firstNum.value = "";
+    secondNum.value = "";
+    output.innerHTML = "";
+}
