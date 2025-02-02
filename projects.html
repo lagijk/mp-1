@@ -31,9 +31,28 @@
                 <!--Main content of the internal page that occupy at least half of the screen-->
                 <main>
                     <h2>Projects</h2>
-                    <ul>
+                  
+                    <p>An ongoing 2D pixel action shooter game developed in unity with procedural dungeon generation.</p>
+                    <a href="https://github.com/lagijk/Unity-Untitled-Game">Untitled Game</a>
+
+                    <!--JS calculator-->
+                    <!--2 input values for the calculator-->
+                    <label for="input1">First Number:</label>
+                    <input type="text" id="first-number">
+                    <label for="input2">Second Number:</label>
+                    <input type="text" id="second-number">
+
+                    <!--six operations for the calculator-->
+                    <button onclick="addition()">+</button>
+                    <button onclick="subtraction()">-</button>
+                    <button onclick="multiply()">*</button>
+                    <button onclick="division()">/</button>
+                    <button onclick="exponent()">**</button>
+                    <button onclick="clear()">Clear</button>
+
+                    <!--output for the calculator-->
+                    <h3 id="output"></h3>
                     
-                    </ul>
                 </main>
             </div>
 
@@ -42,6 +61,8 @@
                 <p>All rights reserved by Alex Chen: <a href="">Credits</a> &#169;</p>
             </footer>
 
+            <!--connect calculator to js-->
+            <script src="projects.js"></script>
         </div> 
     </body>
 </html>
