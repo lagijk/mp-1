@@ -23,13 +23,6 @@ header {
     padding: 2vw;
 }
 
-/*custom css style for subtitle under header*/
-#subtitle {
-    font-family: "Gill Sans", sans-serif;
-    font-size: calc(5px + 1vw);
-    padding: 1vh 1vw
-}
-
 /*screen > 750px should not exceed 30% of width of parent*/
 nav {
     width: 30%
@@ -99,22 +92,72 @@ img {
     padding: 1vh 2vw;
 }
 
-/*css style for text in main*/
-#mainText {
-    font-size: calc(3px + 1vw);
-    color: #112D4E;
-    align-self: center;
-    width: 50%;
-    margin: 1vh 1vw;
-    
+h3 {
+    text-align: center;
+    padding: 1vw 1vh;
 }
 
-/*css style for home page sub text under main*/
-#subMainText {
+/*css styling for overall calculator*/
+#calc {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: calc(3px + 1vw);
     color: #112D4E;
+}
+
+/*css style for overall input, including input button and label*/
+#calcInput {
+    font-size: calc(4px + 1vw);
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+/*css styling for both input boxes*/
+input[type="text"] {
+    padding: 1vh;
+    font-size: calc(3px + 1vw);
+    border: calc(1px + 0.1vw) solid #3F72AF;
+    border-radius: calc(1px + 1vw);
+    background-color: #F5F5F5;
+}
+/*css styling for lable values*/
+label {
     padding: 1vw;
+}
+
+/*css styling for all buttons*/
+#calcButton {
+    width: 60%;
+    padding: 3vh 2vw;
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+   
+}
+
+/*css styling for individual buttons*/
+button {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #112D4E;
+    font-size: calc(2px + 1vw);
+    background-color: #DBE2EF;
+    padding: 1vh 1.5vw;
+    border: calc(1px + 0.1vw) solid #3F72AF;
+    border-radius: calc(1px + 1vw);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*css styling for result of calculator*/
+#output {
+    width: 50%;
+    border: calc(1px + 0.1vw) solid #3F72AF;
+    border-radius: calc(1px + 1vw);
+    background-color: #F5F5F5;
+    padding: 2vh 1vw;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
 footer {
@@ -189,22 +232,53 @@ footer a {
     }
 
     /*increase text font on smaller screen*/
-    #mainText {
-        font-size: calc(3px + 2vw);
-        color: #112D4E;
-        align-self: center;
+    #calcInput {
+        font-size: calc(4px + 2vw);
+        display: flex;
+        flex-direction: column;
         width: 50%;
-        margin: 1vh 1vw;
-        
+        margin-left: auto;
+        margin-right: auto;
     }
-    
-    #subMainText {
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        font-size: calc(3px + 2vw);
-        color: #112D4E;
+
+    /*css styling for both input boxes*/
+    input[type="text"] {
+        padding: 1vh 1vw;
+        font-size: calc(5px + 1vw);
+    }
+    /*css styling for lable values*/
+    label {
         padding: 1vw;
     }
 
+    /*css styling for all buttons*/
+    #calcButton {
+        width: 60%;
+        padding: 3vh 2vw;
+        display: flex;
+        flex-direction: row;
+        margin-left: auto;
+        margin-right: auto;
+    
+    }
+
+    button {
+        font-size: calc(6px + 1vw);
+        padding: 1vh 2vw;
+        border: calc(1px + 0.1vw) solid #3F72AF;
+        border-radius: calc(1px + 1vw);
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #output {
+        width: 50%;
+        padding: 1vh 1vw;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+    
     #container {
         width: 100%;
         flex-direction: column;
