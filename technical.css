@@ -207,4 +207,8 @@ footer a {
         flex-direction: column;
         height: 100vh;
     }
+
+    footer {
+        font-size: calc(4px + 1vw);
+    }
 }
