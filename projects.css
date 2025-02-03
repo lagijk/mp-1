@@ -75,21 +75,25 @@ h2 {
     padding: 1vh;
 }
 
-/*reduce image size*/
-img {
-    width: 45%;
-    padding: 0.5vw;
-    margin: 1vh 1vw;
-    border-radius: calc(1px + 1vw);
+/*css styling for personal project*/
+#personal {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #112D4E;
+    padding: 1vh 1vw;
 }
 
-/*css style for keeping image and text side by side*/
-#imageText {
-    display: flex;
-    flex-direction: row;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    width: 100%;
-    padding: 1vh 2vw;
+/*remove link styling for title of game*/
+a {
+    color: #112D4E;
+    text-decoration: none;
+}
+/*css styling for main texts of personal projeect*/
+td {
+    font-size: calc(4px + 1vw);
+    color: #112D4E;
+    border: solid 2px #3F72AF;
+    padding: 1vw 1vh;
+
 }
 
 h3 {
@@ -217,21 +221,16 @@ footer a {
         flex-direction: column;
     }
 
-    /*center image in smaller screen*/
-    img {
-        max-width: 100%;
-        margin: auto;
-    }
-
-    #imageText {
-        display: flex;
-        flex-direction: column; /*change display to vertical in smaller screen*/
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        width: 100%;
-        padding: 2vh 2vw;
-    }
 
     /*increase text font on smaller screen*/
+    /*css styling for personal project in smaller screen*/
+    td {
+        font-size: calc(7px + 1vw);
+        color: #112D4E;
+        border: solid 2px #3F72AF;
+        padding: 1vw 1vh;
+    }
+
     #calcInput {
         font-size: calc(4px + 2vw);
         display: flex;
