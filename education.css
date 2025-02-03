@@ -132,6 +132,7 @@ footer a {
     width: 100%;
     display: flex;
     flex-direction: row;
+    background-color: #F9F7F7;
 }
 
 /*mobile device screen 750 -1000px*/
@@ -202,6 +203,7 @@ footer a {
 
     #container {
         width: 100%;
+        height: 100vh;
         flex-direction: column;
     }
 }
