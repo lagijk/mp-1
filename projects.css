@@ -10,6 +10,7 @@
 #pageWrapper {
     width: 80vw;
     margin: 0 auto;
+    min-height: 100vh;
 }
 
 /*css style for header, content on screen > 750px should be aligned left*/
@@ -158,7 +159,7 @@ button {
     border: calc(1px + 0.1vw) solid #3F72AF;
     border-radius: calc(1px + 1vw);
     background-color: #F5F5F5;
-    padding: 1.5vh 1vw;
+    padding: 2vh 1vw;
     margin-left: auto;
     margin-right: auto;
 
@@ -182,6 +183,7 @@ footer a {
     width: 100%;
     display: flex;
     flex-direction: row;
+    background-color: #F9F7F7;
 }
 
 /*mobile device screen 750 -1000px*/
@@ -272,7 +274,7 @@ footer a {
 
     #output {
         width: 50%;
-        padding: 1vh 1vw;
+        padding: 2vh 1vw;
         margin-left: auto;
         margin-right: auto;
 
@@ -281,5 +283,6 @@ footer a {
     #container {
         width: 100%;
         flex-direction: column;
+        height: 100vh;
     }
 }
