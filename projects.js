@@ -99,14 +99,18 @@ function exponent() {
 
     //calculate and display result of power operator using for loop
     let result = 1; //set result to 1 for 0 exponent
-    //use Math.abs() to make sure negative exponent can be calculated
-    for (i = 0; i < Math.abs(num2); i++) {
-        result *= num1;
-    }
-    // calculate reciprocal for negative exponent
-    if (num2 < 0) {
+    if (num2 >= 0) {
+        for (i = 0; i < num2; i++) {
+            result *= num1;
+        }
+    } else {
+        // calculate reciprocal for negative exponent
+        for (i = 0; i < -num2; i++) {
+            result *= num1;
+        }
         result = 1 / result;
     }
+    
     output.innerHTML=String(result);
 
     // if result is negative change text color to red
