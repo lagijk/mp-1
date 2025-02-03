@@ -195,7 +195,6 @@ footer a {
     #container {
         width: 100%;
         flex-direction: column;
-        height: 100vh;
     }
 
     footer {
