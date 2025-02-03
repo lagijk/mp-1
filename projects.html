@@ -31,28 +31,37 @@
                 <!--Main content of the internal page that occupy at least half of the screen-->
                 <main>
                     <h2>Projects</h2>
-                  
-                    <p>An ongoing 2D pixel action shooter game developed in unity with procedural dungeon generation.</p>
-                    <a href="https://github.com/lagijk/Unity-Untitled-Game">Untitled Game</a>
+                    
+                    <div id="personal"> 
+                        <p>An ongoing 2D pixel action shooter game developed in Unity with procedural dungeon generation.</p>
+                        <a href="https://github.com/lagijk/Unity-Untitled-Game">Untitled Game</a>
+                    </div>
 
-                    <!--JS calculator-->
-                    <!--2 input values for the calculator-->
-                    <label for="input1">First Number:</label>
-                    <input type="text" id="first-number">
-                    <label for="input2">Second Number:</label>
-                    <input type="text" id="second-number">
+                     <!--JS calculator-->
+                    <div id="calc">
+                        <h3>JS Calculator</h3>    
+                        <div id="calcInput">
+                            <!--2 input values for the calculator-->
+                            <label for="input1">First Number:</label>
+                            <input type="text" id="first-number">
+                            <label for="input2">Second Number:</label>
+                            <input type="text" id="second-number">
+                        </div>
 
-                    <!--six operations for the calculator-->
-                    <button onclick="addition()">+</button>
-                    <button onclick="subtraction()">-</button>
-                    <button onclick="multiply()">*</button>
-                    <button onclick="division()">/</button>
-                    <button onclick="exponent()">**</button>
-                    <button onclick="clearAll()">Clear</button>
+                        <div id="calcButton">
+                            <!--six operations for the calculator-->
+                            <button onclick="addition()">+</button>
+                            <button onclick="subtraction()">-</button>
+                            <button onclick="multiply()">*</button>
+                            <button onclick="division()">/</button>
+                            <button onclick="exponent()">**</button>
+                            <button onclick="clearAll()">Clear</button>
+                        </div>
 
                     <!--output for the calculator-->
                     <h3 id="output"></h3>
-
+                    </div>
+                   
                 </main>
             </div>
 
